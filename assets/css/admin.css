@@ -1,0 +1,223 @@
+.taxonomy-editor-bulk-edit {
+    margin: 20px 0;
+}
+
+.taxonomy-editor-merge-section {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-bottom: 20px;
+}
+
+.taxonomy-editor-merge-section h2 {
+    margin-top: 0;
+}
+
+.taxonomy-editor-merge-section .description {
+    margin-bottom: 20px;
+}
+
+.terms-selection {
+    margin: 20px 0;
+}
+
+.terms-selection table {
+    border-spacing: 0;
+}
+
+.terms-selection .column-primary {
+    width: 50%;
+    cursor: move;
+}
+
+.terms-selection td {
+    vertical-align: middle;
+}
+
+.terms-selection label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.merge-actions {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.merge-actions .spinner {
+    float: none;
+    margin: 0;
+}
+
+/* Drag and drop styles */
+.terms-selection tr.ui-sortable-helper {
+    display: table;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.terms-selection tr.ui-sortable-placeholder {
+    visibility: visible !important;
+    background: #f0f0f1;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 782px) {
+    .terms-selection .column-primary {
+        width: auto;
+    }
+    
+    .terms-selection td {
+        padding: 10px;
+    }
+    
+    .terms-selection label {
+        padding: 8px 0;
+    }
+}
+
+.taxonomy-editor-modal {
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taxonomy-editor-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.taxonomy-editor-modal h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.taxonomy-editor-modal .description {
+    margin-bottom: 20px;
+    color: #646970;
+}
+
+.taxonomy-editor-modal .term-list {
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.taxonomy-editor-modal .term-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.taxonomy-editor-modal .term-item:last-child {
+    border-bottom: none;
+}
+
+.taxonomy-editor-modal .term-item:hover {
+    background: #f0f0f1;
+}
+
+.taxonomy-editor-modal .term-item.selected {
+    background: #2271b1;
+    color: #fff;
+}
+
+.taxonomy-editor-modal .term-count {
+    margin-left: auto;
+    color: #646970;
+}
+
+.taxonomy-editor-modal .term-item.selected .term-count {
+    color: #fff;
+}
+
+.taxonomy-editor-modal .modal-actions {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.tag-modal {
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tag-modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tag-modal h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.tag-modal p {
+    margin-bottom: 15px;
+}
+
+.tag-modal-buttons {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.tag-modal-buttons button {
+    margin-left: 10px;
+}
+
+/* Select2 customizations */
+.tag-modal .select2-container {
+    margin-bottom: 10px;
+}
+
+.tag-modal .select2-container--default .select2-selection--multiple {
+    border-color: #8c8f94;
+}
+
+.tag-modal .select2-container .select2-selection--multiple {
+    min-height: 32px;
+}
+
+.tag-modal .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    margin-top: 4px;
+    background-color: #f0f0f1;
+    border-color: #8c8f94;
+} 
